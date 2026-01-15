@@ -1,0 +1,46 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: feature/pynblint
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/PalomoIFCA/testnotebook-sqaaas:
+      branch: main
+      repo: https://github.com/PalomoIFCA/testnotebook-sqaaas
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/PalomoIFCA/testnotebook-sqaaas git:
+        commands:
+        - /usr/bin/env sh .sqa/script.breezy-magnolia-turkey.sh
+        container: qc.acc_woozy-plum-ostrich
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/testnotebook-sqaaas find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.bumpy-corn-seahorse.sh
+        container: qc.doc_droopy-amethyst-whale
+      github.com/PalomoIFCA/testnotebook-sqaaas git:
+        commands:
+        - /usr/bin/env sh .sqa/script.squirrely-scarlet-fly.sh
+        container: qc.doc_cloudy-indigo-kudu
+      github.com/PalomoIFCA/testnotebook-sqaaas markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.chewy-emerald-angelfish.sh
+        container: qc.doc_freaky-puce-weasel
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/testnotebook-sqaaas licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.stuffy-cinnamon-forest.sh
+        container: qc.lic_cozy-magenta-greyhound
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/testnotebook-sqaaas get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.flimsy-tangerine-stingray.sh
+        container: qc.ver_snazzy-wheat-rat
+timeout: 5400
