@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testnotebook-sqaaas &&
-    pynblint.py
+    flake8 .
 )
