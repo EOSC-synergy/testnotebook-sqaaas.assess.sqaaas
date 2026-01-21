@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-champagne-uakari.sh
-        container: qc.acc_thirsty-ochre-kingfisher
+        - /usr/bin/env sh .sqa/script.skanky-zucchini-labradoodle.sh
+        container: qc.acc_randy-mauve-wolfhound
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-salmon-bird.sh
-        container: qc.doc_crabby-auburn-hyena
+        - /usr/bin/env sh .sqa/script.pasty-fuchsia-numbat.sh
+        container: qc.doc_wheezy-sepia-dachsbracke
       github.com/PalomoIFCA/testnotebook-sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-sapphire-gibbon.sh
-        container: qc.doc_shabby-silver-civet
+        - /usr/bin/env sh .sqa/script.lovely-seashell-vole.sh
+        container: qc.doc_skimpy-bistre-guppy
       github.com/PalomoIFCA/testnotebook-sqaaas markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-periwinkle-mastiff.sh
-        container: qc.doc_slaphappy-lilac-meerkat
+        - /usr/bin/env sh .sqa/script.geeky-bronze-bat.sh
+        container: qc.doc_bumpy-ultramarine-kudu
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-harlequin-insect.sh
-        container: qc.lic_gimpy-purple-dormouse
+        - /usr/bin/env sh .sqa/script.pasty-champagne-kingfisher.sh
+        container: qc.lic_droopy-taupe-monster
   QC.Sec:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-myrtle-toucan.sh
-        container: qc.sec_gloppy-myrtle-barnacle
+        - /usr/bin/env sh .sqa/script.snappy-lemon-chin.sh
+        container: qc.sec_nippy-salmon-gharial
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testnotebook-sqaaas flake8:
+      github.com/PalomoIFCA/testnotebook-sqaaas pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-ultramarine-dunker.sh
-        container: qc.sty_snappy-grey-tarsier
+        - /usr/bin/env sh .sqa/script.sloppy-pumpkin-chameleon.sh
+        container: qc.sty_paltry-ultramarine-tang
   QC.Uni:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-platinum-insect.sh
-        container: qc.uni_hazy-coral-binturong
+        - /usr/bin/env sh .sqa/script.stuffy-razzmatazz-manatee.sh
+        container: qc.uni_lousy-emerald-shrew
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-periwinkle-pig.sh
-        container: qc.ver_slimy-magnolia-salamander
+        - /usr/bin/env sh .sqa/script.pretty-cinnamon-schnauzer.sh
+        container: qc.ver_muzzy-crimson-havanese
 timeout: 5400
