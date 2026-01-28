@@ -3,7 +3,7 @@
         "version": "3.5.0",
         "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/testnotebook-sqaaas.assess.sqaaas/main/.report/assessment_output.json",
         "report_permalink": "https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/testnotebook-sqaaas.assess.sqaaas/main/.report/assessment_output.json",
-        "timestamp": 1769588231.715519
+        "timestamp": 1769588806.3772218
     },
     "repository": [
         {
@@ -643,9 +643,9 @@
             "criteria": {
                 "bronze": {
                     "to_fulfill": [
-                        "QC.Lic",
                         "QC.Doc",
                         "QC.Acc",
+                        "QC.Lic",
                         "QC.Met"
                     ],
                     "missing": [
@@ -659,54 +659,54 @@
                 },
                 "silver": {
                     "to_fulfill": [
+                        "QC.Sty",
                         "QC.Acc",
-                        "QC.Lic",
+                        "QC.Doc",
                         "QC.Ver",
                         "QC.Met",
                         "QC.Sec",
-                        "QC.Doc",
-                        "QC.Sty"
+                        "QC.Lic"
                     ],
                     "missing": [
-                        "QC.Met",
-                        "QC.Lic",
                         "QC.Doc",
                         "QC.Sty",
+                        "QC.Met",
+                        "QC.Lic",
                         "QC.Ver"
                     ],
                     "fulfilled": [
-                        "QC.Acc",
-                        "QC.Sec"
+                        "QC.Sec",
+                        "QC.Acc"
                     ]
                 },
                 "gold": {
                     "to_fulfill": [
-                        "QC.Del",
+                        "QC.Sty",
                         "QC.Acc",
-                        "QC.Lic",
-                        "QC.Uni",
-                        "QC.Ver",
-                        "QC.Man",
                         "QC.Wor",
+                        "QC.Uni",
+                        "QC.Doc",
+                        "QC.Ver",
+                        "QC.Del",
                         "QC.Met",
                         "QC.Sec",
-                        "QC.Doc",
-                        "QC.Sty"
+                        "QC.Lic",
+                        "QC.Man"
                     ],
                     "missing": [
-                        "QC.Lic",
-                        "QC.Uni",
-                        "QC.Ver",
                         "QC.Sty",
-                        "QC.Man",
-                        "QC.Met",
-                        "QC.Del",
+                        "QC.Wor",
+                        "QC.Uni",
                         "QC.Doc",
-                        "QC.Wor"
+                        "QC.Ver",
+                        "QC.Del",
+                        "QC.Met",
+                        "QC.Lic",
+                        "QC.Man"
                     ],
                     "fulfilled": [
-                        "QC.Acc",
-                        "QC.Sec"
+                        "QC.Sec",
+                        "QC.Acc"
                     ]
                 }
             },
