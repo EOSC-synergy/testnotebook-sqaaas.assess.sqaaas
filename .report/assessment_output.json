@@ -3,7 +3,7 @@
         "version": "3.5.0",
         "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/testnotebook-sqaaas.assess.sqaaas/main/.report/assessment_output.json",
         "report_permalink": "https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/testnotebook-sqaaas.assess.sqaaas/main/.report/assessment_output.json",
-        "timestamp": 1769589960.9840555
+        "timestamp": 1769590764.9194758
     },
     "repository": [
         {
@@ -645,13 +645,13 @@
                     "to_fulfill": [
                         "QC.Lic",
                         "QC.Acc",
-                        "QC.Met",
-                        "QC.Doc"
+                        "QC.Doc",
+                        "QC.Met"
                     ],
                     "missing": [
                         "QC.Lic",
-                        "QC.Met",
-                        "QC.Doc"
+                        "QC.Doc",
+                        "QC.Met"
                     ],
                     "fulfilled": [
                         "QC.Acc"
@@ -659,20 +659,20 @@
                 },
                 "silver": {
                     "to_fulfill": [
-                        "QC.Doc",
-                        "QC.Lic",
                         "QC.Sty",
-                        "QC.Acc",
-                        "QC.Sec",
                         "QC.Met",
-                        "QC.Ver"
+                        "QC.Lic",
+                        "QC.Sec",
+                        "QC.Acc",
+                        "QC.Ver",
+                        "QC.Doc"
                     ],
                     "missing": [
-                        "QC.Doc",
                         "QC.Lic",
+                        "QC.Doc",
                         "QC.Ver",
-                        "QC.Met",
-                        "QC.Sty"
+                        "QC.Sty",
+                        "QC.Met"
                     ],
                     "fulfilled": [
                         "QC.Acc",
@@ -681,28 +681,28 @@
                 },
                 "gold": {
                     "to_fulfill": [
-                        "QC.Doc",
+                        "QC.Sty",
+                        "QC.Met",
                         "QC.Lic",
                         "QC.Man",
-                        "QC.Uni",
-                        "QC.Sty",
-                        "QC.Acc",
-                        "QC.Del",
                         "QC.Sec",
-                        "QC.Wor",
-                        "QC.Met",
-                        "QC.Ver"
+                        "QC.Del",
+                        "QC.Uni",
+                        "QC.Acc",
+                        "QC.Ver",
+                        "QC.Doc",
+                        "QC.Wor"
                     ],
                     "missing": [
-                        "QC.Wor",
-                        "QC.Doc",
-                        "QC.Lic",
-                        "QC.Uni",
                         "QC.Sty",
-                        "QC.Del",
-                        "QC.Man",
                         "QC.Met",
-                        "QC.Ver"
+                        "QC.Lic",
+                        "QC.Wor",
+                        "QC.Del",
+                        "QC.Uni",
+                        "QC.Ver",
+                        "QC.Doc",
+                        "QC.Man"
                     ],
                     "fulfilled": [
                         "QC.Acc",
