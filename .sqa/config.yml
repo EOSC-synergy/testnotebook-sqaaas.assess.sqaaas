@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/Ophidia
+      branch: feature/pynblint
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testnotebook-sqaaas:
       branch: main
@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-salmon-dormouse.sh
-        container: qc.acc_bluesy-sapphire-raccoon
+        - /usr/bin/env sh .sqa/script.gamy-buff-drever.sh
+        container: qc.acc_flaky-amethyst-raccoon
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-seashell-ostrich.sh
-        container: qc.doc_pokey-grey-antelope
+        - /usr/bin/env sh .sqa/script.shaggy-rust-fousek.sh
+        container: qc.doc_crappy-tangerine-rat
       github.com/PalomoIFCA/testnotebook-sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-seashell-capybara.sh
-        container: qc.doc_stinky-gamboge-cattle
+        - /usr/bin/env sh .sqa/script.craggy-amber-bullfrog.sh
+        container: qc.doc_breezy-azure-rhinoceros
       github.com/PalomoIFCA/testnotebook-sqaaas markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-razzmatazz-dragonfly.sh
-        container: qc.doc_pretty-gamboge-urchin
+        - /usr/bin/env sh .sqa/script.tasty-black-rottweiler.sh
+        container: qc.doc_skinny-ivory-jackal
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-buff-kakapo.sh
-        container: qc.lic_gimpy-gold-akita
+        - /usr/bin/env sh .sqa/script.muzzy-wheat-hare.sh
+        container: qc.lic_bluesy-chestnut-anteater
   QC.Sec:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-corn-angora.sh
-        container: qc.sec_sickly-russet-horse
+        - /usr/bin/env sh .sqa/script.whiny-mauve-cassowary.sh
+        container: qc.sec_cranky-chocolate-nightingale
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testnotebook-sqaaas flake8:
+      github.com/PalomoIFCA/testnotebook-sqaaas pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-red-squid.sh
-        container: qc.sty_snazzy-gold-snake
+        - /usr/bin/env sh .sqa/script.pokey-chocolate-spaniel.sh
+        container: qc.sty_stealthy-vermilion-lemur
   QC.Uni:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-cinnamon-indri.sh
-        container: qc.uni_lousy-taupe-lion
+        - /usr/bin/env sh .sqa/script.slimy-lemon-indri.sh
+        container: qc.uni_craggy-magenta-forest
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-cerise-centipede.sh
-        container: qc.ver_foggy-puce-frog
+        - /usr/bin/env sh .sqa/script.snazzy-ecru-meerkat.sh
+        container: qc.ver_sleazy-rose-spaniel
 timeout: 5400
