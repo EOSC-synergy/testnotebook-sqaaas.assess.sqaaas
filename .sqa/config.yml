@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/pynblint
+      branch: feature/pynblint_fix
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testnotebook-sqaaas:
       branch: main
@@ -15,50 +15,54 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-brown-dane.sh
-        container: qc.acc_chewy-teal-mandrill
+        - /usr/bin/env sh .sqa/script.rosewater_bewildered_opossum.sh
+        container: qc.acc_clove_carefree_grizzly
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-chestnut-crab.sh
-        container: qc.doc_cozy-cerise-dugong
+        - /usr/bin/env sh .sqa/script.ochre_sad_beaver.sh
+        container: qc.doc_forest_kind_termite
       github.com/PalomoIFCA/testnotebook-sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-aquamarine-woodpecker.sh
-        container: qc.doc_homely-grey-chamois
+        - /usr/bin/env sh .sqa/script.tan_thoughtful_frog.sh
+        container: qc.doc_butterscotch_plucky_nighthawk
       github.com/PalomoIFCA/testnotebook-sqaaas markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-olive-fish.sh
-        container: qc.doc_clammy-azure-otter
+        - /usr/bin/env sh .sqa/script.turmeric_supportive_moose.sh
+        container: qc.doc_mint_joyful_kirin
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-gamboge-swan.sh
-        container: qc.lic_cranky-tomato-llama
+        - /usr/bin/env sh .sqa/script.ecru_inventive_armadillo.sh
+        container: qc.lic_chili_perky_grizzly
   QC.Sec:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-brass-vulture.sh
-        container: qc.sec_blurry-orange-elephant
+        - /usr/bin/env sh .sqa/script.bone_happy_wolf.sh
+        container: qc.sec_indigo_scrappy_quokka
   QC.Sty:
     repos:
+      github.com/PalomoIFCA/testnotebook-sqaaas flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.pine_industrious_flounder.sh
+        container: qc.sty_espresso_stubborn_clownfish
       github.com/PalomoIFCA/testnotebook-sqaaas pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-eggplant-bracke.sh
-        container: qc.sty_lousy-lilac-salamander
+        - /usr/bin/env sh .sqa/script.fern_blissful_roc.sh
+        container: qc.sty_sapphire_proactive_moose
   QC.Uni:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-tangerine-gerbil.sh
-        container: qc.uni_pasty-pear-wombat
+        - /usr/bin/env sh .sqa/script.violet_timid_kangaroo.sh
+        container: qc.uni_bone_playful_caiman
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testnotebook-sqaaas get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-chestnut-mole.sh
-        container: qc.ver_skinny-indigo-hornet
+        - /usr/bin/env sh .sqa/script.porcelain_adventurous_grasshopper.sh
+        container: qc.ver_cayenne_lucky_nymph
 timeout: 5400
